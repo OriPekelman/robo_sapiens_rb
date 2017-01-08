@@ -1,22 +1,51 @@
-WowWee RoboRemote IR Dongle SDK
-===============
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/WowWeeLabs/RoboRemote-IR-Dongle-SDK?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-![](Images/RoboRemote.jpg)
+# RoboSapiens
+## WowWee RoboRemote IR Dongle SDK - Quick and Dirt Ruby Lib
 
-The free RoboRemote IR Dongle protocol lets you send IR commands to any previous generation WowWee robots. These dongles come for free in the [RoboSapien X](http://store.wowwee.com/robots/robosapien-x.html) or [RoboRaptor X](http://store.wowwee.com/robots/roboraptor-x.html) products. Or else they can be purchased seperately from our [online store](http://store.wowwee.com/robots/roboremote.html).
+For the moment Only RoboSapiens is implemented
 
-For information on WowWee products visit: http://www.wowwee.com/.
 
-How to use it
------------------------------------------------
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/robo_sapiens`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-Using this SDK is very simple, each sound file available corresponds to a different button on the corresponding robot remote control.
+TODO: Delete this and the text above, and describe your gem
 
-All you need to do is play the sound file within your application making sure that the device has atleast 75% volume (this varies on each device). This will transmit the correct IR signal from the remote dongle
+## Installation
 
-Licensing
------------------------------------------------
-Any apps developed using these sounds that are designed for the WowWee RoboRemote IR dongle can be released without restriction on any app store. No royalties are required.
+Add this line to your application's Gemfile:
 
-We do however ask that you provide a link to our online shop so that customers can purchase the robots if they don't already have one.'
+```ruby
+gem 'robo_sapiens'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install robo_sapiens
+
+## Usage
+
+require "robo_sapiens"
+
+robot :talk_back
+robot :go_backward
+robot :roar
+robot :power_off
+
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/oripekelman/robo_sapiens_rb.
+
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+

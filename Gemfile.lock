@@ -1,21 +1,35 @@
-GEM
+PATH
+  remote: .
   specs:
-    audio-playback (0.0.7)
-      ffi-libc (~> 0.1, >= 0.1.0)
-      ffi-portaudio (~> 0.1, >= 0.1.2)
-      ruby-audio (~> 1.6, >= 1.6.1)
-    ffi (1.9.14)
-    ffi-libc (0.1.0)
-      ffi (~> 1.0)
-    ffi-portaudio (0.1.2)
-      ffi
-    ruby-audio (1.6.1)
+    robo_sapiens (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    diff-lcs (1.2.5)
+    rake (10.5.0)
+    rspec (3.5.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+    rspec-core (3.5.4)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  audio-playback
+  bundler (~> 1.13)
+  rake (~> 10.0)
+  robo_sapiens!
+  rspec (~> 3.0)
 
 BUNDLED WITH
    1.13.6

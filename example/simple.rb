@@ -1,4 +1,4 @@
-require_relative "robo_sapiens"
+require "robo_sapiens"
 
 robot :talk_back
 robot :go_backward

@@ -1,3 +1,4 @@
+require "robo_sapiens/version"
 require "audio-playback"
 
 COMMANDS= {
@@ -63,7 +64,7 @@ COMMANDS= {
  power_off: "60_POWER_OFF_0xD1",
 }
 
-MEDIA_DIRECTORY = "./Sounds/RoboSapien"
+MEDIA_DIRECTORY = "./assets/Sounds/RoboSapien"
 
 command = :epaule_droit_devant
 
@@ -79,4 +80,4 @@ def robot(command)
   @playback.block
   @playback.start
   sleep 1
-end  
+end
