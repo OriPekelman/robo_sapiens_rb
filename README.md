@@ -4,12 +4,9 @@
 
 For the moment Only RoboSapiens is implemented
 
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/robo_sapiens`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
+
+Later if I consider this to be Rubygems worthy you would:
 
 Add this line to your application's Gemfile:
 
@@ -25,14 +22,23 @@ Or install it yourself as:
 
     $ gem install robo_sapiens
 
+For the moment, clone this repo anr un:
+
+    $ rake install
+
+
 ## Usage
 
-require "robo_sapiens"
+    require "robo_sapiens"
+    
+    robot :talk_back
+    robot :go_backward
+    robot :roar
+    robot :power_off
+    
+Complete list of available commands:
 
-robot :talk_back
-robot :go_backward
-robot :roar
-robot :power_off
+> all_demo, back_step, bulldozer, burp, dance, demo1, demo2, go_backward, go_forward, high5, left_hand_backward, left_hand_forward, left_lean_fwd, left_pic_up, left_sensor_program, left_sensor_program_excute, left_shoulder_backward, left_shoulder_forward, left_strike1, left_strike2, left_strike3, left_sweep, left_throw, left_thump, left_turn_step, listen, main_program, main_program_excute, main_program_play, oops, power_off, reset, right_hand_backward, right_hand_forward, right_lean_bwd, right_pick_up, right_sensor_program, right_sensor_program_excute, right_shoulder_backward, right_shoulder_forward, right_strike1, right_strike2, right_strike3, right_sweep, right_throw, right_thump, right_turn_step, roar, sleep, sonic_sensor_program, sonic_sensor_program_excute, step, stop, talk_back, turn_left, turn_right, waist_left, waist_right, wake_up, whistle
 
 ## Development
 
